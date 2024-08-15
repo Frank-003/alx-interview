@@ -1,5 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+
 import sys
+
 
 def print_msg(dict_sc, total_file_size):
     """
@@ -17,18 +19,17 @@ def print_msg(dict_sc, total_file_size):
             print("{}: {}".format(key, val))
 
 
-# Initialize variables
 total_file_size = 0
-status_codes_count = {
-    200: 0,
-    301: 0,
-    400: 0,
-    401: 0,
-    403: 0,
-    404: 0,
-    405: 0,
-    500: 0
-}
+code = 0
+counter = 0
+dict_sc = {"200": 0,
+           "301": 0,
+           "400": 0,
+           "401": 0,
+           "403": 0,
+           "404": 0,
+           "405": 0,
+           "500": 0}
 
 try:
     for line in sys.stdin:
