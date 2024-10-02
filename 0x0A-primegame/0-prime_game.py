@@ -2,7 +2,17 @@
 """Module defining isWinner function."""
 
 def isWinner(x, nums):
-"""Function to get who has won in prime game"""
+"""
+  Determines the winner of a prime number game between Maria and Ben.
+
+  Args:
+    x: The number of rounds played.
+    nums: An array of integers representing the maximum number in each round.
+
+  Returns:
+    The name of the player who won the most rounds. If there is no clear winner,
+    returns None.
+  """
   maria_wins = 0
   ben_wins = 0
 
