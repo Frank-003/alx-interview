@@ -2,8 +2,7 @@
 """Module defining isWinner function."""
 
 def isWinner(x, nums):
-
-
+"""Function to get who has won in prime game"""
   maria_wins = 0
   ben_wins = 0
 
